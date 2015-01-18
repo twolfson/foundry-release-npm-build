@@ -15,12 +15,13 @@ var initialParams = {
 describe('Updating files', function () {
   describe('for a node module', function () {
     var fixtureDir = fixtureUtils.fixtureDir('npm-build');
+    childUtils.shellExec.stub();
     before(function updateFiles (done) {
       npmReleaseBuild.updateFiles(initialParams, done);
     });
 
     it('builds the package', function () {
-      expect(JSON.parse(pkgJson)).to.have.property('version', '0.1.0');
+      expect(this.execStub.calledWith).to.equal('npm run build');
     });
   });
 });
