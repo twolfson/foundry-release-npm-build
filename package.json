@@ -1,8 +1,8 @@
 {
-  "name": "foundry-release-npm",
-  "description": "npm release library for foundry",
-  "version": "1.1.0",
-  "homepage": "https://github.com/twolfson/foundry-release-npm",
+  "name": "foundry-release-npm-build",
+  "description": "Run `npm run build` on `foundry release`",
+  "version": "1.0.0",
+  "homepage": "https://github.com/twolfson/foundry-release-npm-build",
   "author": {
     "name": "Todd Wolfson",
     "email": "todd@twolfson.com",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/twolfson/foundry-release-npm.git"
+    "url": "git://github.com/twolfson/foundry-release-npm-build.git"
   },
   "bugs": {
-    "url": "https://github.com/twolfson/foundry-release-npm/issues"
+    "url": "https://github.com/twolfson/foundry-release-npm-build/issues"
   },
   "licenses": [
     {
       "type": "UNLICENSE",
-      "url": "https://github.com/twolfson/foundry-release-npm/blob/master/UNLICENSE"
+      "url": "https://github.com/twolfson/foundry-release-npm-build/blob/master/UNLICENSE"
     }
   ],
-  "main": "lib/foundry-release-npm",
+  "main": "lib/foundry-release-npm-build",
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -31,7 +31,10 @@
   "dependencies": {
     "shelljs": "~0.2.6"
   },
+  "dependencies": {},
   "devDependencies": {
+    "jscs": "~1.7.3",
+    "jshint": "~2.5.10",
     "mocha": "~1.11.0",
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.0",
@@ -43,8 +46,8 @@
   "keywords": [
     "foundry",
     "foundry-release",
-    "npm",
-    "publish",
-    "release"
+    "plugin",
+    "build",
+    "npm"
   ]
 }

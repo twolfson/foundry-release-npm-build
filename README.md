@@ -1,6 +1,6 @@
-# foundry-release-npm [![Build status](https://travis-ci.org/twolfson/foundry-release-npm.png?branch=master)](https://travis-ci.org/twolfson/foundry-release-npm)
+# foundry-release-npm-build [![Build status](https://travis-ci.org/twolfson/foundry-release-npm-build.png?branch=master)](https://travis-ci.org/twolfson/foundry-release-npm-build)
 
-Manage [npm][] releases via [foundry][]
+Run `npm run build` on `foundry release`
 
 This is an [npm][] plugin for [foundry][], a plugin based release management library.
 
@@ -15,18 +15,18 @@ https://github.com/twolfson/foundry-release-spec
 [spec]: https://github.com/twolfson/foundry-release-spec
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint via [grunt](https://github.com/gruntjs/grunt) and test via `npm test`.
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint via `npm run lint` and test via `npm test`.
 
 ## Donating
-Support this project and [others by twolfson][gittip] via [gittip][].
+Support this project and [others by twolfson][gratipay] via [gratipay][].
 
-[![Support via Gittip][gittip-badge]][gittip]
+[![Support via Gratipay][gratipay-badge]][gratipay]
 
-[gittip-badge]: https://rawgithub.com/twolfson/gittip-badge/master/dist/gittip.png
-[gittip]: https://www.gittip.com/twolfson/
+[gratipay-badge]: https://cdn.rawgit.com/gratipay/gratipay-badge/2.x.x/dist/gratipay.png
+[gratipay]: https://www.gratipay.com/twolfson/
 
 ## Unlicense
-As of Jan 12 2014, Todd Wolfson has released this repository and its contents to the public domain.
+As of Jan 18 2015, Todd Wolfson has released this repository and its contents to the public domain.
 
 It has been released under the [UNLICENSE][].
 
