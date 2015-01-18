@@ -14,14 +14,14 @@ var initialParams = {
 };
 describe('Updating files', function () {
   describe('for a node module', function () {
-    var fixtureDir = fixtureUtils.fixtureDir('npm-build');
+    fixtureUtils.fixtureDir('npm-build');
     childUtils.shellExec.stub();
     before(function updateFiles (done) {
       npmReleaseBuild.updateFiles(initialParams, done);
     });
 
     it('builds the package', function () {
-      expect(this.execStub.calledWith).to.equal('npm run build');
+      expect(this.execStub.args).to.deep.equal([['npm run build']]);
     });
   });
 });
