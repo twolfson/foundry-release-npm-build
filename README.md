@@ -15,7 +15,7 @@ Instead of using it, we suggest a custom command in `releaseCommands`:
 }
 ```
 
-Our reasoning is this library was already a one-off. If anyone wants more customization (e.g. flags, running `npm run compile` instead), then it would be more configuration for a single command. The custom command covers that easily and transparently.
+Our reasoning is this library was already a one-off. If anyone wants customization (e.g. flags, running `npm run compile` instead), then we would configuration options. That would be overkill for a single command. The custom command covers that easily and transparently.
 
 -----------
 
