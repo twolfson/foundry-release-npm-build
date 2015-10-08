@@ -1,5 +1,24 @@
 # foundry-release-npm-build [![Build status](https://travis-ci.org/twolfson/foundry-release-npm-build.png?branch=master)](https://travis-ci.org/twolfson/foundry-release-npm-build)
 
+This repository has been deprecated with the release of `foundry-release-spec@2.0.0`.
+
+Instead of using it, we suggest a custom command in `releaseCommands`:
+
+```js
+{
+    "releaseCommands": [
+        {
+            "type": "customCommand",
+            "updateFiles": "npm run build"
+        }
+    ]
+}
+```
+
+Our reasoning is this library was already a one-off. If anyone wants more customization (e.g. flags, running `npm run compile` instead), then it would be more configuration for a single command. The custom command covers that easily and transparently.
+
+-----------
+
 Run `npm run build` on `foundry release`
 
 This is an [npm][] plugin for [foundry][], a plugin based release management library.
