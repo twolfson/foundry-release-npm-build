@@ -53,5 +53,11 @@
     "plugin",
     "build",
     "npm"
-  ]
+  ],
+  "foundry": {
+    "releaseCommands": [
+      "foundry-release-git",
+      "foundry-release-npm"
+    ]
+  }
 }
